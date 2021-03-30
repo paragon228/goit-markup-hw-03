@@ -15,7 +15,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
@@ -33,6 +32,22 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+} */
+
+/* Утилиты */
+.list,
+.portfolio-items {
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .container {
@@ -54,6 +69,39 @@ p {
 
 .accent {
   color: var(--accent-color);
+}
+
+.main-nav {
+  display: flex;
+  width: 1170px;
+  min-height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.link-page {
+  margin-right: 95px;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-contacts {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-contacts .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav .link {
@@ -85,6 +133,7 @@ p {
 .hero {
   margin-bottom: 0;
   text-align: center;
+  min-height: 600px;
   background-color: var(--dark-bg-color);
 }
 
@@ -100,6 +149,21 @@ p {
   color: var(--primary-white-color);
 }
 
+.recommendation-list {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+}
+
+.first-item {
+  display: flex;
+  width: 270px;
+}
+
+.recommendation-list .content:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-title {
   margin-bottom: 10px;
   font-family: var(--title-font);
@@ -107,7 +171,6 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--title-text-color);
 }
 
@@ -121,6 +184,7 @@ p {
 }
 
 .fhoto-title {
+  text-align: center;
   margin-bottom: 50px;
   font-family: Roboto;
   font-weight: 700;
@@ -132,6 +196,10 @@ p {
 
 .fhoto {
   padding-top: 0;
+}
+
+.fhoto-item .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .name-title {
@@ -163,22 +231,11 @@ p {
   cursor: pointer;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.list,
-.portfolio-items {
-  padding: 0;
-  margin: 0;
-}
-
 .footer {
   background-color: var(--dark-bg-color);
 }
 
 .list-options {
-  /* margin-bottom: 50px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
