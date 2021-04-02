@@ -34,10 +34,10 @@ p {
   margin-bottom: 0;
 }
 
-/* img {
+img {
   display: block;
   max-width: 100%;
-} */
+}
 
 /* Утилиты */
 .list,
@@ -131,15 +131,31 @@ p {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 0;
   text-align: center;
+
   min-height: 600px;
   background-color: var(--dark-bg-color);
+}
+
+/* .hero .conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.hero-content {
+  /* width: calc(100% / 12 * 12); */
+  max-width: 700px;
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+
   font-family: var(--title-font);
   font-weight: 900;
   font-size: 44px;
@@ -166,6 +182,7 @@ p {
 
 .section-title {
   margin-bottom: 10px;
+
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 14px;
@@ -179,6 +196,18 @@ p {
   padding-bottom: 94px;
 }
 
+.fhoto {
+  padding-top: 0;
+}
+
+.fhoto-list {
+  display: flex;
+}
+
+.fhoto-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-fhoto {
   background-color: var(--secondary-bg-color);
 }
@@ -186,6 +215,7 @@ p {
 .fhoto-title {
   text-align: center;
   margin-bottom: 50px;
+
   font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
@@ -194,15 +224,22 @@ p {
   color: var(--title-text-color);
 }
 
-.fhoto {
-  padding-top: 0;
+.team {
+  display: flex;
 }
 
-.fhoto-item .item:not(:last-child) {
+.team .item:not(:last-child) {
   margin-right: 30px;
 }
 
+.card-thumb {
+  margin-bottom: 30px;
+}
+
 .name-title {
+  text-align: center;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -211,6 +248,9 @@ p {
 }
 
 .text {
+  text-align: center;
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -235,12 +275,25 @@ p {
   background-color: var(--dark-bg-color);
 }
 
-.list-options {
+.site-options .conteiner-menu {
+  text-align: center;
+}
+
+.options {
+  display: inline-flex;
+  margin-bottom: 50px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+  padding: 6px 22px;
   color: var(--title-text-color);
+}
+
+.options-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .card-heading {
@@ -257,4 +310,21 @@ p {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.grid-items {
+  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.picture {
+  margin-bottom: 20px;
 }
